@@ -58,20 +58,24 @@ export default function Home() {
           {/* The Social Profiles of the Creater starts*/}
           <div className={style.hero_social}>
             {/* Anchor Tag at images */}
-            <Image
-              className={style.img}
-              src={linkpic}
-              width={500}
-              height={500}
-              alt="GIF Image"
-            />
-            <Image
-              className={style.img}
-              src={gitpic}
-              width={500}
-              height={500}
-              alt="GIF Image"
-            />
+            <a href="https://www.linkedin.com/in/susobhanakhuli">
+              <Image
+                className={style.img}
+                src={linkpic}
+                width={500}
+                height={500}
+                alt="GIF Image"
+              />
+            </a>
+            <a href="https://github.com/susobhanakhuli">
+              <Image
+                className={style.img}
+                src={gitpic}
+                width={500}
+                height={500}
+                alt="GIF Image"
+              />
+            </a>
           </div>
           {/* The Social Profiles of the Creater Ends*/}
         </div>
