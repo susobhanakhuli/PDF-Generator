@@ -108,6 +108,7 @@
     margin-bottom: -.55rem;
     /* margin-left: -2rem; */
     margin-right: .5rem;
+    filter: invert(1);
 }
 
 .dwn_button{
