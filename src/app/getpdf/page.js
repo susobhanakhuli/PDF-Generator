@@ -10,7 +10,8 @@ export function GetPdf() {
 
   const handleUrl = () => {
     console.log(url);
-    fetch("https://bored-bedclothes-pike.cyclic.cloud/here", {
+    console.log(process.env.NEXT_PUBLIC_BACKEND_URL);
+    fetch(process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000/here", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
