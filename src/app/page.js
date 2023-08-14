@@ -9,7 +9,7 @@ import gitpic from "./images/github.gif";
 import urlpic from "./images/url-img.png";
 import dowpic from "./images/down-logo.png";
 
-import { GetPdf } from "./getpdf/page";
+import GetPdf from "./getpdf/page";
 
 export default function Home() {
   return (
