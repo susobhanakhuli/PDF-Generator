@@ -6,8 +6,6 @@ import pdfpic from "./images/pdf.gif";
 import arrowpic from "./images/arrow.gif";
 import linkpic from "./images/linkdin.gif";
 import gitpic from "./images/github.gif";
-import urlpic from "./images/url-img.png";
-import dowpic from "./images/down-logo.png";
 
 import GetPdf from "./getpdf/page";
 
