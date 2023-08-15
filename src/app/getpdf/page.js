@@ -9,11 +9,11 @@ import dowpic from "../images/down-logo.png";
 
 export default function GetPdf() {
   const backend_url = process.env.NEXT_PUBLIC_BACKEND_URL;
-  const [url, setUrl] = useState(null);
+  const [urls, setUrls] = useState(null);
 
   const handleUrl = (e) => {
     e.preventDefault();
-    console.log(url);
+    console.log(urls);
     console.log(backend_url);
     axios({
       url: `${backend_url}/download`,
@@ -21,7 +21,7 @@ export default function GetPdf() {
       responseType: "blob",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `${url}`,
+        Authorization: `${urls}`,
       },
     })
       .then((res) => {
@@ -81,7 +81,7 @@ export default function GetPdf() {
             required
             className={style.url_box}
             onChange={(e) => {
-              setUrl(e.target.value);
+              setUrls(e.target.value);
             }}
           />
         </div>
