@@ -29,6 +29,8 @@ export default function GetPdf() {
       })
       .catch((err) => console.log(err));
 
+    setUrls("");
+
     // fetch("http://localhost:8000/download", {
     //   // fetch(`${backend_url}/here`, {
     //   method: "GET",
@@ -83,6 +85,7 @@ export default function GetPdf() {
             onChange={(e) => {
               setUrls(e.target.value);
             }}
+            value={urls}
           />
         </div>
         <div className={style.dwn_button}>
